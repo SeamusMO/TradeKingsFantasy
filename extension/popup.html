@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 250px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    #captureBtn {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 8px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    #resultContainer {
+      text-align: left;
+    }
+    #status {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    #resultOutput {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      font-size: 11px;
+      padding: 8px;
+      border: 1px solid #ddd;
+      background: #f4f4f4;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+  <h3>Trade Analyzer</h3>
+  
+  <button id="captureBtn">Select Area for Analysis</button>
+
+  <div id="status">Ready. Click button to start selection.</div>
+
+  <div id="resultContainer">
+    <strong>Analysis Result:</strong>
+    <pre id="resultOutput">Waiting for selection...</pre>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
