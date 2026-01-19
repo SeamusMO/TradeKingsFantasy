@@ -1,6 +1,6 @@
 # Fantasy Trade Advisor
 
-A Chrome extension and Python-based backend system that processes fantasy basketball roster screenshots, extracts player information using OCR, and provides analytical recommendations to improve team composition and trade strategy.
+A Chrome extension and Python-based backend system that processes fantasy football and basketball roster screenshots, extracts player information using OCR, and provides analytical recommendations to improve team composition and trade strategy.
 
 This project integrates browser automation, image processing, optical character recognition, fuzzy name matching, and AI-driven analysis into a cohesive tool designed to streamline roster evaluation.
 
@@ -37,10 +37,12 @@ fantasy-trade-advisor/
 │   ├── app.py                   
 │   ├── main.py
 │   ├── player.py              
-│   ├── playerRankings.csv
+│   ├── nbaPlayerRankings.csv
 │   ├── nbaPlayers.csv      
 │   ├── requirements.txt
 │   ├── config_example.env
+│   ├── NFL_player_stats_season_2024
+│   ├── FantasyPros-consensus-rankings
 │
 ├── .gitignore
 └── README.md
