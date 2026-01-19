@@ -62,7 +62,8 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
                         image: dataUrl,
-                        coords: request.coords
+                        coords: request.coords,
+                        url: sender.tab.url
                     })
                 });
 
