@@ -15,6 +15,7 @@ def process_trade():
         data = request.json
         image_data = data['image']
         coords = data['coords']
+        url = data['url'] # Extract the URL from the request
 
         if "base64," in image_data:
             image_data = image_data.split("base64,")[1]
@@ -29,6 +30,9 @@ def process_trade():
             coords['y'] + coords['height']
         )
         selected_img = full_img.crop(crop_area)
+
+        # Set the sport and site based on the URL before processing
+        main.setURL(url)
 
         result = main.perform_full_parse_from_image(selected_img)
 
